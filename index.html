@@ -16,6 +16,12 @@
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+    <!-- theme css file -->
+    <link rel="stylesheet" href="css/themes.css" />
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,26 +68,26 @@
         >
           <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#" data-translate="nav.home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
+              <a class="nav-link" href="#service" data-translate="nav.service">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about" data-translate="nav.about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#portfolio" data-translate="nav.portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
+              <a class="nav-link" href="#testimonial" data-translate="nav.testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#blog" data-translate="nav.blog">Blog</a>
             </li>
           </ul>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" data-translate="nav.contact">Contact</button>
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -90,30 +96,30 @@
     <section class="home pt-5 pb-5" id="home">
       <div class="row justify-content-evenly align-items-center">
           <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-              <h2 style="color: #2D7A7A">  <!-- Dark teal color -->
-                  Data Science Specialist<br>
-                  <span class="c-gold">Segni Girma</span>  <!-- Gold accent -->
+              <h2>
+                  <span data-translate="home.title">Data Science Specialist</span><br>
+                  <span class="c-orange" data-translate="home.name">Segni Girma</span>
               </h2>
-              <p class="lead text-dark mt-3">
+              <p class="lead mt-3" data-translate="home.subtitle">
                   Transforming Data into Actionable Insights
               </p>
               <div class="specializations mt-4">
-                  <span class="badge bg-light text-dark me-2 mb-2">
-                      <i class="bi bi-cpu me-2"></i>Machine Learning
+                  <span class="badge me-2 mb-2">
+                      <i class="bi bi-cpu me-2"></i><span data-translate="home.ml">Machine Learning</span>
                   </span>
-                  <span class="badge bg-light text-dark me-2 mb-2">
-                      <i class="bi bi-bar-chart-line me-2"></i>Data Analysis
+                  <span class="badge me-2 mb-2">
+                      <i class="bi bi-bar-chart-line me-2"></i><span data-translate="home.analysis">Data Analysis</span>
                   </span>
-                  <span class="badge bg-light text-dark me-2 mb-2">
-                      <i class="bi bi-robot me-2"></i>AI Solutions
+                  <span class="badge me-2 mb-2">
+                      <i class="bi bi-robot me-2"></i><span data-translate="home.ai">AI Solutions</span>
                   </span>
               </div>
               <div class="cta-buttons mt-5">
-                  <a href="#portfolio" class="c-btn h-btn py-3 px-5 rounded-pill">
+                  <a href="#portfolio" class="c-btn h-btn py-3 px-5 rounded-pill" data-translate="home.view-projects">
                       View Projects
                   </a>
                   <a href="#contact" class="link ms-4 py-3 px-5">
-                      <i class="bi bi-download me-2"></i>Download CV
+                      <i class="bi bi-download me-2"></i><span data-translate="home.download-cv">Download CV</span>
                   </a>
               </div>
           </div>
@@ -129,8 +135,8 @@
     <!-- expertise section starts -->
     <section class="expertise mt-5" id="service">
       <div class="heading text-center">
-        <small>My Expertise</small>
-        <h3>
+        <small data-translate="expertise.title">My Expertise</small>
+        <h3 data-translate="expertise.subtitle">
           Provide Wide Range of <br />
           Digital Services
         </h3>
@@ -146,15 +152,12 @@
               />
             </div>
             <div class="content mt-3">  
-              <h4>Competitive Programmer</h4>  
-              <p class="text-muted">  
-                  Competitive programming is a fun way to challenge yourself and improve your coding skills. It involves solving algorithmic problems under time constraints. Enhance your problem-solving abilities and coding efficiency along the way!  
-              </p>  
-              <p class="text-muted">  
-                  Join the community of competitive programmers to share knowledge and improve together!  
+              <h4 data-translate="expertise.competitive">Competitive Programmer</h4>  
+              <p class="text-muted" data-translate="expertise.competitive-desc">  
+                  Competitive programming is a fun way to challenge yourself and improve your coding skills. It involves solving algorithmic problems under time constraints.
               </p>  
               
-              <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-java" class="link" target="_blank">Read More</a>  
+              <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-java" class="link" target="_blank" data-translate="common.read-more">Read More</a>  
           </div>   
           </div>
         </div>
@@ -168,15 +171,12 @@
               />
             </div>
             <div class="content mt-3">  
-              <h4>Data Science</h4>  
-              <p class="text-muted">  
-                  Data science combines statistics, computer science, and domain knowledge to extract insights from data. It plays a critical role in decision-making across various industries.  
-              </p>
-              <p class="text-muted">  
-                  Learn more about data science and its applications in today’s world.  
+              <h4 data-translate="expertise.data-science">Data Science</h4>  
+              <p class="text-muted" data-translate="expertise.data-science-desc">  
+                  Data science combines statistics, computer science, and domain knowledge to extract insights from data.
               </p>  
               
-              <a href="https://www.ibm.com/cloud/learn/data-science-introduction" class="link" target="_blank">Read More</a>  
+              <a href="https://www.ibm.com/cloud/learn/data-science-introduction" class="link" target="_blank" data-translate="common.read-more">Read More</a>  
           </div>
           </div>
         </div>
@@ -190,15 +190,12 @@
               />
             </div>
             <div class="content mt-3">  
-              <h4>Python Developer</h4>  
-              <p class="text-muted">  
-                  A Python developer specializes in writing server-side web applications, scripting, and data analysis using Python. With its simplicity and powerful libraries, Python is a popular choice for various applications, including web development, data science, automation, and more.  
-              </p>
-              <p class="text-muted">  
-                  Python developers play a crucial role in building robust applications and automating tasks across various domains.  
+              <h4 data-translate="expertise.python">Python Developer</h4>  
+              <p class="text-muted" data-translate="expertise.python-desc">  
+                  A Python developer specializes in writing server-side web applications, scripting, and data analysis using Python.
               </p>  
               
-              <a href="https://www.python.org/doc/essays/foreword.html" class="link" target="_blank">Read More</a>  
+              <a href="https://www.python.org/doc/essays/foreword.html" class="link" target="_blank" data-translate="common.read-more">Read More</a>  
           </div>  
             </div>
           </div>
@@ -254,22 +251,10 @@
         </div>
         <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
           <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
-            <p class="text-muted">
-              ⏱️ Competitive Programmer: Solve algorithmic challenges with optimized code under time constraints
-              <br>
-
-              📊 Data Science: Extract insights using statistical analysis & machine learning
-              <br>
-
-              🐍 Python Dev: Build apps/automation with Django, Flask, Pandas & NumPy
-              <br>
-
-              🌐 Holistic Skills: Blend coding efficiency, analytical rigor & software development
-            </p>
-            <p class="text-muted">
-              Data science
+            <small data-translate="skills.title">My Skills</small>
+            <h3 data-translate="skills.subtitle">Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted" data-translate="skills.description">
+              ⏱️ Competitive Programmer: Solve algorithmic challenges with optimized code under time constraints<br>📊 Data Science: Extract insights using statistical analysis & machine learning<br>🐍 Python Dev: Build apps/automation with Django, Flask, Pandas & NumPy<br>🌐 Holistic Skills: Blend coding efficiency, analytical rigor & software development
             </p>
             <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               <!-- here download attribute is used for adding download functionality to button  -->
@@ -277,7 +262,7 @@
                 href="Segni Girma resume.pdf"
                 download="SampleCV"
                 style="text-decoration: none;color: #fff;"
-                >Download CV</a
+                data-translate="home.download-cv">Download CV</a
               >
             </button>
           </div>
@@ -289,16 +274,16 @@
     <!-- portfolio section starts here -->
     <section class="portfolio" id="portfolio">
       <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
+        <small data-translate="portfolio.title">Creative Work</small>
+        <h3 data-translate="portfolio.subtitle">Check My Portfolio</h3>
       </div>
 
       <div id="myBtnContainer" class="text-center mt-4">
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="machinelearning">Machine Learning</button>
-        <button class="filter-item" data-filter="datavisualization">Data Visualization</button>
-        <button class="filter-item" data-filter="dataanalysis">Data Analysis</button>
-        <button class="filter-item" data-filter="nlp">NLP</button>
+        <button class="filter-item" data-filter="all" data-translate="portfolio.all">All</button>
+        <button class="filter-item" data-filter="machinelearning" data-translate="portfolio.ml">Machine Learning</button>
+        <button class="filter-item" data-filter="datavisualization" data-translate="portfolio.viz">Data Visualization</button>
+        <button class="filter-item" data-filter="dataanalysis" data-translate="portfolio.analysis">Data Analysis</button>
+        <button class="filter-item" data-filter="nlp" data-translate="portfolio.nlp">NLP</button>
     </div>
     
     <div class="portfolio-body">
@@ -312,7 +297,7 @@
                         <span class="badge bg-secondary badge-pill">Python</span>
                         <span class="badge bg-secondary badge-pill">Scikit-learn</span>
                         <span class="badge bg-secondary badge-pill mb-2">TensorFlow</span><br>
-                        <a href="#" class="link">Read More</a>
+                        <a href="#" class="link" data-translate="common.read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -326,7 +311,7 @@
                         <span class="badge bg-secondary badge-pill">Tableau</span>
                         <span class="badge bg-secondary badge-pill">Power BI</span>
                         <span class="badge bg-secondary badge-pill mb-2">Matplotlib</span><br>
-                        <a href="#" class="link">Read More</a>
+                        <a href="#" class="link" data-translate="common.read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -340,7 +325,7 @@
                         <span class="badge bg-secondary badge-pill">Pandas</span>
                         <span class="badge bg-secondary badge-pill">NumPy</span>
                         <span class="badge bg-secondary badge-pill mb-2">SQL</span><br>
-                        <a href="#" class="link">Read More</a>
+                        <a href="#" class="link" data-translate="common.read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -356,7 +341,7 @@
                         <span class="badge bg-secondary badge-pill">NLTK</span>
                         <span class="badge bg-secondary badge-pill">spaCy</span>
                         <span class="badge bg-secondary badge-pill mb-2">Transformers</span><br>
-                        <a href="#" class="link">Read More</a>
+                        <a href="#" class="link" data-translate="common.read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -370,7 +355,7 @@
                         <span class="badge bg-secondary badge-pill">Spark</span>
                         <span class="badge bg-secondary badge-pill">Hadoop</span>
                         <span class="badge bg-secondary badge-pill mb-2">PySpark</span><br>
-                        <a href="#" class="link">Read More</a>
+                        <a href="#" class="link" data-translate="common.read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -384,7 +369,7 @@
                         <span class="badge bg-secondary badge-pill">Prophet</span>
                         <span class="badge bg-secondary badge-pill">ARIMA</span>
                         <span class="badge bg-secondary badge-pill mb-2">LSTM</span><br>
-                        <a href="#" class="link">Read More</a>
+                        <a href="#" class="link" data-translate="common.read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -606,8 +591,8 @@
     <!-- contact section starts -->
     <section class="contact py-5" id="contact">
       <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
+        <small data-translate="contact.title">Get in Touch</small>
+        <h3 data-translate="contact.subtitle">Any Questions? Feel Free to Contact</h3>
       </div>
       <div class="row justify-content-evenly mt-5">
         <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
@@ -651,6 +636,7 @@
                 type="text"
                 class="form-control"
                 id="exampleFormControlInput1"
+                data-translate="contact.name"
                 placeholder="Name"
               />
             </div>
@@ -659,6 +645,7 @@
                 type="email"
                 class="form-control"
                 id="exampleFormControlInput1"
+                data-translate="contact.email"
                 placeholder="E-mail"
               />
             </div>
@@ -667,6 +654,7 @@
                 type="text"
                 class="form-control"
                 id="exampleFormControlInput1"
+                data-translate="contact.mobile"
                 placeholder="Mobile No."
               />
             </div>
@@ -674,11 +662,12 @@
               <textarea
                 class="form-control"
                 id="exampleFormControlTextarea1"
+                data-translate="contact.message"
                 placeholder="Message"
                 rows="5"
               ></textarea>
             </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" data-translate="contact.submit">
               Submit
             </button>
           </div>
@@ -786,6 +775,12 @@
     </script>
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
+    
+    <!-- theme toggle js -->
+    <script src="js/theme-toggle.js"></script>
+    
+    <!-- language switcher js -->
+    <script src="js/language-switcher.js"></script>
     
   </body>
 </html>
