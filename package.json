@@ -1,0 +1,23 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio website with responsive design, multi-language support, and theme toggle",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "start": "npx http-server . -p 3000",
+    "build": "echo 'Static site - no build process needed'"
+  },
+  "keywords": [
+    "portfolio",
+    "responsive",
+    "multi-language",
+    "dark-mode",
+    "light-mode"
+  ],
+  "author": "Segni Girma",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
