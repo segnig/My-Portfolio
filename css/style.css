@@ -431,3 +431,163 @@ footer .link-group a:hover{
     .telegram { background-color: #0088cc; color: white; }
     .instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
     .facebook { background-color: #1877f2; color: white; }
+
+/* certificates section styles */
+.certificates {
+    background-color: var(--bg-secondary, #f8f9fa);
+}
+
+.academic-timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.academic-timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #cc7f03, #0b406c);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -47px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #cc7f03;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #cc7f03;
+}
+
+.timeline-content h5 {
+    color: var(--text-secondary, #3f396d);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.timeline-year {
+    color: #cc7f03;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.certificates-gallery {
+    background: var(--card-bg, #fff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.certificate-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.certificate-preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.certificate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(204, 127, 3, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.certificate-preview:hover .certificate-overlay {
+    opacity: 1;
+}
+
+.certificate-info h6 {
+    color: var(--text-secondary, #3f396d);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.achievements-section {
+    background: var(--card-bg, #fff);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.achievement-item {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+.achievement-item h5 {
+    color: var(--text-secondary, #3f396d);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Certificate modal styles */
+.certificate-details ul {
+    padding-left: 20px;
+}
+
+.certificate-details li {
+    margin-bottom: 8px;
+    color: var(--text-muted, #6c757d);
+}
+
+/* Responsive adjustments for certificates */
+@media (max-width: 768px) {
+    .academic-timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-marker {
+        left: -37px;
+    }
+    
+    .certificates-gallery {
+        padding: 20px;
+    }
+    
+    .achievements-section {
+        padding: 25px;
+    }
+    
+    .achievement-item {
+        margin-bottom: 20px;
+    }
+}
